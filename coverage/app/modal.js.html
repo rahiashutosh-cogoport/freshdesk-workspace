@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for app/modal.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">all files</a> / <a href="index.html">app/</a> modal.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">92.31% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>24/26</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">50% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>1/2</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">80% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>4/5</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">92% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>23/25</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">14×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">14×</span>
+<span class="cline-any cline-yes">14×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">14×</span>
+<span class="cline-any cline-yes">14×</span>
+<span class="cline-any cline-yes">14×</span>
+<span class="cline-any cline-yes">14×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">14×</span>
+<span class="cline-any cline-yes">14×</span>
+<span class="cline-any cline-yes">14×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">12×</span>
+<span class="cline-any cline-yes">12×</span>
+<span class="cline-any cline-yes">12×</span>
+<span class="cline-any cline-yes">12×</span>
+<span class="cline-any cline-yes">12×</span>
+<span class="cline-any cline-yes">12×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">12×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">12×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">12×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">12×</span>
+<span class="cline-any cline-yes">12×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">12×</span>
+<span class="cline-any cline-yes">110×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">'use strict';
+const details_get_url = 'https://uat-api.cogoport.com/api/v1/organizations/profile';
+&nbsp;
+$(document).ready(function() {
+  app.initialized()
+  .then(function(_client) {
+    var client = _client;    
+    var userData = {};
+    var url = details_get_url;
+    client.instance.context()
+    .then(function(context) {
+      userData = context.data;      
+      url = url + '?email=' + userData.email;      
+      client.request.get(url, {})
+        .then(
+            function(data) {
+                let response = JSON.parse(data.response);                
+                $('.timeline-wrapper').attr('style', 'display: none;');
+                $('#organization_details').attr('style', 'display: block;');
+                $('#users_details').attr('style', 'display: block;');
+                $('#shipments_details').attr('style', 'display: block;');
+                <span class="missing-if-branch" title="if path not taken" >I</span>if(data.status !== 200) {
+<span class="cstat-no" title="statement not covered" >                    toastr.error('SOME ERROR OCCURRED WHILE LOADING PROFILE INFORMATION');</span>
+                }
+&nbsp;
+                var template = '&lt;div&gt;&lt;h3 class="heading"&gt;${organization.business_name.toUpperCase()}&lt;/h3&gt;\
+                                &lt;p class="orgtype"&gt;${organization.type.toUpperCase()}&lt;/p&gt;\
+                                &lt;/div&gt;';
+&nbsp;
+                var org_users_template = '&lt;tr&gt;&lt;td&gt;${user.name}&lt;/td&gt;&lt;td&gt;${user.email}&lt;/td&gt;&lt;td&gt;${user.phone_no}&lt;/td&gt;&lt;/tr&gt;'; 
+                                          
+                var shipments_template = '&lt;tr&gt;\
+                                            &lt;td&gt;${commodity.name}&lt;/td&gt;\
+                                            &lt;td&gt;${commodity.hs_code}&lt;/td&gt;\
+                                            &lt;td&gt;${container_size}&lt;/td&gt;\
+                                            &lt;td&gt;${container_type}&lt;/td&gt;\
+                                            &lt;td&gt;${origin_port.display_name}&lt;/td&gt;\
+                                            &lt;td&gt;${destination_port.display_name}&lt;/td&gt;\
+                                          &lt;/tr&gt;';
+&nbsp;
+                $.tmpl( template, response.data).appendTo('#organization_details');
+                $.tmpl( org_users_template, response.data).appendTo('#users_table');
+&nbsp;
+                for(var i=0; i&lt;response.data.shipments.length; i++) {                    
+                    $.tmpl( shipments_template, response.data.shipments[0]).appendTo('#shipments_table');
+                }                
+            },
+            function(error) <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >                console.error('AN ERROR OCCURRED: ', error);</span>
+            }
+        );
+    });
+&nbsp;
+    
+&nbsp;
+    // $('.manage-bookmarks').on('click', '.remove-bookmark', function() {
+    //   var ticketId = $(this).parents('.manage-bm-li').data('ticketId');
+    //   $(this).parents('.manage-bm-li').remove();
+    //   client.instance.send({ 
+    //     message: {type: 'removeTicket', ticketId: ticketId}
+    //   }); 
+    // });
+  });
+});</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Mon Aug 12 2019 19:43:56 GMT+0530 (IST)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>
